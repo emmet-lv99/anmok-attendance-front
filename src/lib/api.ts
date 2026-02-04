@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000', // 백엔드 주소 (나중에 환경변수로 분리 가능)
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000',
   timeout: 5000,
   headers: {
     'Content-Type': 'application/json',
