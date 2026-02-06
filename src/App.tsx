@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./components/MainLayout";
+import ChatbotPage from "./pages/ChatbotPage";
 import DashboardPage from "./pages/DashboardPage";
 import LoginPage from "./pages/LoginPage";
 import ServiceUnavailablePage from "./pages/ServiceUnavailablePage";
@@ -14,7 +15,7 @@ function App() {
         {/* Protected Routes (Main Layout) */}
         <Route element={<MainLayout />}>
           <Route path="/dashboard" element={<DashboardPage />} />
-          <Route path="/chatbot" element={<ServiceUnavailablePage />} />
+          <Route path="/chatbot" element={<ChatbotPage />} />
           <Route path="/profile" element={<ServiceUnavailablePage />} />
         </Route>
       </Routes>
